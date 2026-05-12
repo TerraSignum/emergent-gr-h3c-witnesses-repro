@@ -17,35 +17,46 @@ modes), and pa = cos(phase) / ||cos(phase)||_2, the sup over nodes
 
   S(N) := sup_i |chir_i(N)|
 
-decays as a clean power law S(N) = C * N^{-alpha} on the
-canonical-physics ladder N in [50, 300] with R^2 >= 0.99 across
-8 regimes. The free-fit alpha = 0.8136 matches the squared
-chirality-balance amplitude
+decays as a power law S(N) = C * N^{-alpha} on the
+canonical-physics ladder N in [50, 512] across 10 regimes
+(50, 64, 72, 84, 100, 128, 200, 256, 300, 512). The ladder
+spans the matter-vacuum chirality flip at N* ~ 110-120
+(theta_chir = pi/4 between N=100 at 37.1deg and N=128 at
+46.1deg), so the chirality-sup decay is branch-resolved:
 
-  alpha_xi^2 = (1 - gamma)^2 = (9/10)^2 = 81/100 = 0.81
+  vacuum (N <= 100, 5 pts):  alpha_vac = 0.7425  R^2 = 0.94
+  matter (N >= 128, 5 pts):  alpha_mat = 0.3861  R^2 = 0.68
+  pooled (all 10 pts):       alpha     = 0.6445  R^2 = 0.93
 
-within 0.44%, the closest of all framework rationals to the
-empirical free-fit. alpha_xi^2 is also the time-time component
-of the anisotropic cosmological-constant tensor in the emergent
-Einstein equation (Lambda_t = alpha_xi^2 = 81/100, see L9 in P2
-landings and the Lambda_t Symanzik-2 multipoint fit y_inf =
-0.8134 in P4), so the chirality-sup decay-exponent and the
-cosmological-constant time-time component coincide at the
-algebraic value alpha_xi^2 - a non-trivial cross-observable
-unification.
+Free-fit pooled alpha = 0.6445 lies 3.3% below 2/3 =
+(d-2)/(d-1) = 0.6667 (AICc-best among 9 candidates).
+alpha_xi^2 = 81/100 is the formal AICc runner-up at
+Delta AICc = +2.35 and remains the structural candidate
+on the vacuum branch (alpha_vac = 0.7425 is 8.3% below
+81/100, with bootstrap CI95 [0.60, 0.83] on the pooled
+free fit containing both 81/100 and 2/3).
 
-Theoretical sketch (cleaner than the earlier D_Omega draft).
-The chirality residual at a node i is the difference of two
-quadratic mode-occupations w_q_i and w_l_i (each is sum of
-V[i,k]^2). Each squared eigenvector amplitude propagates at the
-single-mode survival amplitude alpha_xi = 1 - gamma per
-propagation step (P3 single-mode dispersion lemma). The
-difference of two quadratic occupations w_q - w_l therefore
-inherits an effective scaling alpha_xi * alpha_xi = alpha_xi^2
-in the continuum lattice limit. The sup over N nodes of the
-phase-modulated quadratic difference scales as N^{-alpha_xi^2}
-to leading order; the bootstrap CI95 [0.76, 1.02] contains
-alpha_xi^2 = 81/100 at 0.5sigma from the bootstrap mean.
+alpha_xi^2 is also the time-time component of the
+anisotropic cosmological-constant tensor's matter-branch
+value (Lambda_t^mat = 81/100; vacuum-branch Lambda_t^vac
+= 33/40, P4 branch-resolved decomposition), so the
+cross-observable identification alpha = alpha_xi^2 is a
+vacuum-side structural candidate; matter-branch
+universality of the decay rate remains open pending
+higher-N data.
+
+Theoretical sketch (heuristic). The chirality residual at
+a node i is the difference of two quadratic mode-occupations
+w_q_i and w_l_i (each is sum of V[i,k]^2). Each squared
+eigenvector amplitude carries one factor of the Yukawa-
+damping survival amplitude alpha_xi = 1 - gamma (the
+universal P3 loop-class factor underlying the 1+/-gamma/4
+cluster); the sum w_q + w_l saturates at alpha_xi while
+the difference, vanishing on the chirality-symmetric state,
+is suppressed by an additional factor alpha_xi, giving
+the structural rate S(N) ~ N^{-alpha_xi^2}. A specific
+propagator-step identification and a sup-over-N saturation
+bound are deferred as analytical follow-up.
 
 Outputs:
   outputs/verify_chirality_sup_DOmega.json  - per-regime ladder,
@@ -80,6 +91,7 @@ LADDER = [
     (100, "results_d1_p5n100_24seeds/P5N100.snapshots.npz",             "snap"),
     (128, "results_d1_p5n128_kq_fixed/P5N128.snapshots.npz",            "snap"),
     (200, "results_d1_p5n200_8seeds/P5N200.snapshots.npz",              "snap"),
+    (256, "results_d1_p5n256_12seeds/P5N256.snapshots.npz",             "snap"),
     (300, "results_d1_p5n300_12seeds/P5N300.snapshots.npz",             "snap"),
     (512, "results_d1_p5n512_12seeds/P5N512.snapshots.npz",             "snap"),
 ]
