@@ -1,6 +1,6 @@
 # emergent-gr-h3c-witnesses-repro
 
-[![CI: reproduce](https://github.com/[anonymized]/emergent-gr-h3c-witnesses-repro/actions/workflows/reproduce.yml/badge.svg)](https://github.com/[anonymized]/emergent-gr-h3c-witnesses-repro/actions/workflows/reproduce.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI: reproduce](https://github.com/TerraSignum/emergent-gr-h3c-witnesses-repro/actions/workflows/reproduce.yml/badge.svg)](https://github.com/TerraSignum/emergent-gr-h3c-witnesses-repro/actions/workflows/reproduce.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 Reproducibility package for the **multi-observable indirect-witness

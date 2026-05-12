@@ -7,7 +7,7 @@ authors:
 version: 0.1.0
 date-released: 2026-05-03
 license: MIT
-repository-code: "https://github.com/[anonymized]/emergent-gr-h3c-witnesses-repro"
+repository-code: "https://github.com/TerraSignum/emergent-gr-h3c-witnesses-repro"
 references:
   - type: article
     title: "Multi-observable indirect-witness chain for the Einstein-identity gap"
