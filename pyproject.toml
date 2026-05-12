@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emergent-gr-h3c-witnesses-repro"
+version = "0.1.0"
+description = "Reproducibility package for the multi-observable indirect-witness chain (chirality balance, Ricci scalar, off-diagonal stress) bounding the Einstein-identity gap on the relational lattice."
+authors = [
+    { name = "Sandro Bucciarelli", email = "sandro.bucciarelli89@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["emergent gravity", "Einstein gap", "chirality balance", "Ricci witness", "Look-Elsewhere", "reproducibility"]
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+]
+
+[project.urls]
+Repository = "https://github.com/[anonymized]/emergent-gr-h3c-witnesses-repro"
+Homepage = "https://github.com/[anonymized]/emergent-gr-h3c-witnesses-repro"
+Issues = "https://github.com/[anonymized]/emergent-gr-h3c-witnesses-repro/issues"
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra"

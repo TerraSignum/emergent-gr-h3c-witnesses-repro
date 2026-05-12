@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "H3C: multi-observable Einstein-gap consistency witnesses"
+message: "If you use this software or data, please cite it using the metadata below."
+authors:
+  - family-names: Bucciarelli
+    given-names: Sandro
+version: 0.1.0
+date-released: 2026-05-03
+license: MIT
+repository-code: "https://github.com/[anonymized]/emergent-gr-h3c-witnesses-repro"
+references:
+  - type: article
+    title: "Multi-observable indirect-witness chain for the Einstein-identity gap"
+    authors:
+      - family-names: Bucciarelli
+        given-names: Sandro
+    year: 2026
+    notes: "Accompanying preprint; see paper/ in this repository."

@@ -1,0 +1,31 @@
+{
+  "method": "Rbar_free_alpha_AICc",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-04",
+  "data_source": "data/einstein_gap_9point_witnesses.json",
+  "n_points_full": 9,
+  "free_alpha_full": {
+    "alpha": 0.8432322084343495,
+    "log_C": 0.9124584296731773,
+    "R2": 0.8686579097469829,
+    "rss": 0.2094120013236659,
+    "aicc": -27.846086219514774
+  },
+  "fixed_alpha_2_3_full": {
+    "alpha": 0.6666666666666666,
+    "log_C": 0.2521265965379694,
+    "R2": 0.830571826889708,
+    "rss": 0.27013650188823407,
+    "aicc": -28.983043591293328
+  },
+  "free_alpha_skip_N18": {
+    "alpha": 1.0511639875146077,
+    "R2": 0.9320060428873927,
+    "n_points": 8
+  },
+  "delta_aicc_free_minus_fixed": 1.1369573717785535
+}

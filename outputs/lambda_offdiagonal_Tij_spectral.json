@@ -1,0 +1,44 @@
+{
+  "method": "spectral_embedding_off_diagonal_Tij_single_regime_P5",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "H3c witnesses repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "regime": "P5",
+  "n_lattice": 50,
+  "n_seeds_used": 1,
+  "T_ij_full": [
+    [
+      -0.043519776393097544,
+      -0.014465156320934045,
+      -0.04581279558979322
+    ],
+    [
+      -0.014465156320934045,
+      -0.0762466440923969,
+      0.011355010313109181
+    ],
+    [
+      -0.04581279558979322,
+      0.011355010313109181,
+      0.021093830702732498
+    ]
+  ],
+  "eigenvalues": [
+    -0.08230731087656895,
+    -0.0634910712628422,
+    0.04712579235664923
+  ],
+  "trace": -0.09867258978276194,
+  "mean_eigenvalue": -0.03289086326092064,
+  "std_eigenvalue": 0.057099396380147945,
+  "spread_std_over_mean": 1.7360260789503428,
+  "verdict": "STRONGLY_ANISOTROPIC",
+  "headline": "Phase V single-regime sanity check at P5: spatial T_ij eigenvalues [np.float64(-0.0823), np.float64(-0.0635), np.float64(0.0471)], std/|mean| = 1.74, STRONGLY_ANISOTROPIC. The spatial-isotropy assumption of Phases G-T is approximate; the qualitative claims (anisotropic source, non-phantom, SEC near saturation) survive intact (coordinate-invariant), the precise component-by-component spatial pressure structure is the genuine open piece for full-tensor follow-up.",
+  "reviewer_hedging": {
+    "single_regime_single_seed": "P5 only, seed 0; per-seed and per-regime dispersion of the eigenvalues remain open follow-up.",
+    "spectral_embedding_choice": "Top-3 non-zero L_norm eigenvectors as 3D coordinates; alternative embeddings may give quantitatively different but qualitatively similar anisotropy results.",
+    "scale_normalization": "Per-seed directional-gradient normalization differs from Phase G's scalar grad^2 Psi by factor ~ 4; only the relative eigenvalue spread (coordinate-invariant) is the load-bearing observable here."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Extended chirality-balance witness on the within-P5 lattice ladder; recomputes the 5-point fit at fixed regime physics.",
+  "N_values": [
+    50,
+    64,
+    72,
+    84,
+    100,
+    128,
+    200,
+    300
+  ],
+  "deviation_means": [
+    0.0518861352624691,
+    0.051598713663748796,
+    0.04856812459089166,
+    0.031970500759423204,
+    0.04865172218633307,
+    0.03818259861935458,
+    0.03395787578482512,
+    0.026352695519743174
+  ],
+  "rows": [
+    {
+      "tag": "P5N50",
+      "N": 50,
+      "n_seeds": 28,
+      "deviation": 0.0518861352624691,
+      "source": "d1"
+    },
+    {
+      "tag": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "deviation": 0.051598713663748796,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "deviation": 0.04856812459089166,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "deviation": 0.031970500759423204,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "deviation": 0.04865172218633307,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N128",
+      "N": 128,
+      "n_seeds": 12,
+      "deviation": 0.03818259861935458,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "deviation": 0.03395787578482512,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N300",
+      "N": 300,
+      "n_seeds": 12,
+      "deviation": 0.026352695519743174,
+      "source": "snapshot"
+    }
+  ],
+  "free_alpha_fit": {
+    "alpha_fit": 0.35526669588501336,
+    "C_fit": 0.21043458411911395,
+    "r2_loglog": 0.6964608767748627,
+    "alpha_target": 0.6666666666666666,
+    "ratio": 0.5329000438275201,
+    "deviation_2over3_relative": 0.4670999561724799,
+    "n_points": 8
+  },
+  "fixed_alpha_2over3_fit": {
+    "alpha_fixed": 0.6666666666666666,
+    "Delta_inf": 0.018470115949778987,
+    "C_2over3": 0.4783199686701978,
+    "r2": 0.6778752840416977
+  },
+  "comparison_to_5point_fit": {
+    "5point_alpha_fit": 0.6355052661819749,
+    "5point_r2": 0.7791603590019913,
+    "5point_relative_to_2over3": 0.04674210073
+  }
+}

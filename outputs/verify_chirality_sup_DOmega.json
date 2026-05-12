@@ -1,0 +1,200 @@
+{
+  "method": "Per-node chirality sup-decay audit on canonical lattice ladder; alpha_xi^2 = (1-gamma)^2 = 81/100 structural-rational hypothesis (cross-observable unification with Lambda_t = alpha_xi^2 from P4 and L9 cosmological-tensor row in P2).",
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "Running envelope diagnostic crossing the chirality flip",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "structural_hypothesis": {
+    "form": "S(N) := sup_i |chir_i(N)| = C * N^{-alpha_xi^2}",
+    "alpha_xi_squared": 0.81,
+    "rational": "81/100",
+    "factor": "alpha_xi * alpha_xi = (1-gamma)^2",
+    "cross_observable_match": "alpha_xi^2 = 81/100 is also the time-time cosmological-constant tensor coefficient Lambda_t of the emergent Einstein equation (Paper P4 Symanzik-2 multipoint y_inf = 0.8134, bootstrap median = 0.8117; matched within 0.5%); identical to L9 row in P2 landings table.",
+    "alternative_D_Omega": 0.8375,
+    "alternative_D_Omega_note": "D_Omega = beta_pi - gamma = 67/80 = 0.8375 is the diffusion identity that anchors m_tau, m_mu, m_e, A_s strict-EXACT closures (P3); empirically also in CI95 but 2.86% from free-fit (vs alpha_xi^2 0.44%). Retained as alternative candidate but not primary hypothesis."
+  },
+  "ladder_per_regime": [
+    {
+      "regime_N": 50,
+      "n_seeds": 28,
+      "median_per_node_chir": 0.003952350518827724,
+      "p95_per_node_chir": 0.018115058557329953,
+      "p99_per_node_chir": 0.026295556205098835,
+      "sup_per_node_chir": 0.04169296002363719
+    },
+    {
+      "regime_N": 64,
+      "n_seeds": 24,
+      "median_per_node_chir": 0.002661973047362259,
+      "p95_per_node_chir": 0.01388476747424325,
+      "p99_per_node_chir": 0.022534180582776186,
+      "sup_per_node_chir": 0.03147473367365332
+    },
+    {
+      "regime_N": 72,
+      "n_seeds": 24,
+      "median_per_node_chir": 0.0020855686710910502,
+      "p95_per_node_chir": 0.011027147709368523,
+      "p99_per_node_chir": 0.018215602275414588,
+      "sup_per_node_chir": 0.028847705138096816
+    },
+    {
+      "regime_N": 84,
+      "n_seeds": 24,
+      "median_per_node_chir": 0.0015549245566668173,
+      "p95_per_node_chir": 0.009394933133785165,
+      "p99_per_node_chir": 0.015707441714689466,
+      "sup_per_node_chir": 0.028277720972667432
+    },
+    {
+      "regime_N": 100,
+      "n_seeds": 24,
+      "median_per_node_chir": 0.0011777658462433554,
+      "p95_per_node_chir": 0.007734382232050383,
+      "p99_per_node_chir": 0.01274988439235202,
+      "sup_per_node_chir": 0.024093158178593175
+    },
+    {
+      "regime_N": 128,
+      "n_seeds": 12,
+      "median_per_node_chir": 0.0006334206959668874,
+      "p95_per_node_chir": 0.005729238319617745,
+      "p99_per_node_chir": 0.011739354483411745,
+      "sup_per_node_chir": 0.01788862224613348
+    },
+    {
+      "regime_N": 200,
+      "n_seeds": 8,
+      "median_per_node_chir": 0.0003232710162331901,
+      "p95_per_node_chir": 0.002585633760209528,
+      "p99_per_node_chir": 0.004972093248046141,
+      "sup_per_node_chir": 0.012447968645918343
+    },
+    {
+      "regime_N": 300,
+      "n_seeds": 12,
+      "median_per_node_chir": 0.00017338133690532917,
+      "p95_per_node_chir": 0.0016868233594759506,
+      "p99_per_node_chir": 0.0036501484360294575,
+      "sup_per_node_chir": 0.009703001352945752
+    },
+    {
+      "regime_N": 512,
+      "n_seeds": 12,
+      "median_per_node_chir": 6.541638313295142e-05,
+      "p95_per_node_chir": 0.0007541170418521554,
+      "p99_per_node_chir": 0.002044063804559498,
+      "sup_per_node_chir": 0.010570613970424058
+    }
+  ],
+  "family_AICc": [
+    {
+      "label": "alpha = 2/3 (old Delta_E theory)",
+      "alpha": 0.6666666666666666,
+      "log_c": -0.6508913733576387,
+      "nll": -5.379724477582299,
+      "AICc": -8.188020383736028,
+      "BIC": -8.562224377828379,
+      "r2": 0.9216118363259177,
+      "delta_AICc": 0.0
+    },
+    {
+      "label": "alpha = alpha_xi^2 = 81/100",
+      "alpha": 0.81,
+      "log_c": -0.010637641912820357,
+      "nll": -4.510400515875229,
+      "AICc": -6.449372460321888,
+      "BIC": -6.823576454414239,
+      "r2": 0.8677450917037208,
+      "delta_AICc": 1.73864792341414
+    },
+    {
+      "label": "alpha = 13/16",
+      "alpha": 0.8125,
+      "log_c": 0.000529574333309926,
+      "nll": -4.476007036475034,
+      "AICc": -6.380585501521496,
+      "BIC": -6.7547894956138474,
+      "r2": 0.8658162425926469,
+      "delta_AICc": 1.8074348822145314
+    },
+    {
+      "label": "alpha = 4/5 = alpha_xi - gamma",
+      "alpha": 0.8,
+      "log_c": -0.055306506897342546,
+      "nll": -4.6413809984493515,
+      "AICc": -6.711333425470132,
+      "BIC": -7.085537419562483,
+      "r2": 0.8751212951648174,
+      "delta_AICc": 1.476686958265896
+    },
+    {
+      "label": "alpha = D_Omega = beta_pi - gamma = 67/80",
+      "alpha": 0.8375,
+      "log_c": 0.11220173679461552,
+      "nll": -4.095808349826383,
+      "AICc": -5.620188128224195,
+      "BIC": -5.994392122316546,
+      "r2": 0.8446621900743143,
+      "delta_AICc": 2.567832255511833
+    },
+    {
+      "label": "alpha = 17/20 = alpha_xi - gamma/2",
+      "alpha": 0.85,
+      "log_c": 0.16803781802526802,
+      "nll": -3.880983625152042,
+      "AICc": -5.190538678875513,
+      "BIC": -5.564742672967865,
+      "r2": 0.8328131901281519,
+      "delta_AICc": 2.9974817048605145
+    },
+    {
+      "label": "alpha = alpha_xi = 9/10",
+      "alpha": 0.9,
+      "log_c": 0.3913821429478791,
+      "nll": -2.856848850787931,
+      "AICc": -3.142269130147291,
+      "BIC": -3.5164731242396425,
+      "r2": 0.7769373657635297,
+      "delta_AICc": 5.045751253588737
+    },
+    {
+      "label": "alpha = 1",
+      "alpha": 1.0,
+      "log_c": 0.8380707927931009,
+      "nll": -0.017367098859300434,
+      "AICc": 2.5366943737099703,
+      "BIC": 2.1624903796176187,
+      "r2": 0.6244825590504148,
+      "delta_AICc": 10.724714757445998
+    },
+    {
+      "label": "alpha free (2 parameters)",
+      "alpha": 0.6808419529764136,
+      "log_c": -0.5875719783289352,
+      "nll": -5.390323489898108,
+      "AICc": -4.7806469797962166,
+      "BIC": -6.386197825123777,
+      "r2": 0.9212526562424097,
+      "delta_AICc": 3.407373403939811
+    }
+  ],
+  "bootstrap_CI95": {
+    "n_boot": 2000,
+    "alpha_mean": 0.7050538138901398,
+    "alpha_std": 0.0799460537160874,
+    "alpha_CI95_low": 0.6073217063190143,
+    "alpha_CI95_high": 0.866929740404801
+  },
+  "verdict": {
+    "alpha_free_estimate": 0.6808419529764136,
+    "alpha_xi_sq_in_CI95": true,
+    "D_Omega_in_CI95": true,
+    "alpha_2_3_in_CI95": true,
+    "best_AICc_label": "alpha = 2/3 (old Delta_E theory)",
+    "delta_AICc_alpha_xi_sq": 1.73864792341414,
+    "delta_AICc_D_Omega": 2.567832255511833,
+    "delta_AICc_2_3": 0.0
+  }
+}
