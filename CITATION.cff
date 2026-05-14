@@ -4,6 +4,7 @@ message: "If you use this software or data, please cite it using the metadata be
 authors:
   - family-names: Bucciarelli
     given-names: Sandro
+    email: sandro.bucciarelli89@gmail.com
 version: 0.1.0
 date-released: 2026-05-03
 license: MIT
@@ -14,5 +15,6 @@ references:
     authors:
       - family-names: Bucciarelli
         given-names: Sandro
+    email: sandro.bucciarelli89@gmail.com
     year: 2026
     notes: "Accompanying preprint; see paper/ in this repository."
