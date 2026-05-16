@@ -1,9 +1,4 @@
 {
-  "branch_metadata": {
-    "causal_wave_branch": "matter",
-    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
-    "schema": "worldformula/branch_metadata/v1"
-  },
   "criterion": "Nine-point curvature-side and topological-witness ladders for Theorem 15.18 P2",
   "primary_R_bar": {
     "label": "R_bar (load-bearing curvature-side)",

@@ -20,6 +20,15 @@
 \usepackage{booktabs}
 \usepackage{cite}
 
+% Clickable GitHub links for src/*.py citations (auto-generated)
+\newcommand{\ghrepo}[1]{https://github.com/TerraSignum/#1}
+% \nolinkurl gives a monospace, line-breakable rendering of the
+% short script-stem display text without competing with \href.
+\newcommand{\pyscript}[3]{%
+  \href{\ghrepo{#1}/blob/main/#2}{\nolinkurl{#3}}}
+\newcommand{\repoOwn}{emergent-gr-h3c-witnesses-repro}
+\newcommand{\pyown}[2]{\pyscript{\repoOwn}{#1}{#2}}
+
 \emergencystretch=3em
 \hbadness=10000
 \hfuzz=2pt
@@ -299,7 +308,7 @@ $5\sigma$ above the random-$\Xi$ Wishart baseline sup at
 each $N$ (see Tab.~\ref{tab:alpha_model_comparison_p5}).
 \end{itemize}
 Bundle:
-\path|src/verify_chirality_sup_DOmega.py|, output
+\pyown{src/verify_chirality_sup_DOmega.py}{verify_chirality_sup_DOmega}, output
 \path|outputs/verify_chirality_sup_DOmega.json|.
 
 \paragraph{Structural-rational hypothesis:
@@ -489,7 +498,7 @@ $-0.80$ matching $\alpha_{\xi}^{2}\!=\!81/100$ to $1.4\%$),
 confirming that the continuous chirality observable saturates
 the integer-valued $Q_{\rm top}\!=\!0$ identity at machine
 precision in the continuum limit. Reproducer
-\path|src/verify_chirality_to_integer_lift.py|, output
+\pyown{src/verify_chirality_to_integer_lift.py}{verify_chirality_to_integer_lift}, output
 \path|outputs/verify_chirality_to_integer_lift.json|.
 
 \paragraph{Closure status: empirical correlation here,
@@ -969,7 +978,7 @@ extrapolation $\alpha\to 1$ on weighted graphs.
 The reproducibility package
 (\url{https://github.com/TerraSignum/emergent-gr-h3c-witnesses-repro}) bundles all
 input data files (under \path|data/|), reproducer scripts
-(\path|src/verify_*.py| and \path|src/make_figures.py|), and
+(\path|src/verify_*.py| and \pyscript{causal-wave-landings-repro}{src/make_figures.py}{make_figures}), and
 unit tests (\path|tests/|). Cryptographic provenance is provided by
 \path|data/SHA256SUMS| (GNU \texttt{sha256sum -c} compatible),
 and the publication-prep frozen state is documented in
