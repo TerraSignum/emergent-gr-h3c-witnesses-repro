@@ -22,8 +22,8 @@
 
 % Clickable GitHub links for src/*.py citations (auto-generated)
 \newcommand{\ghrepo}[1]{https://github.com/TerraSignum/#1}
-% \nolinkurl gives a monospace, line-breakable rendering of the
-% short script-stem display text without competing with \href.
+% \nolinkurl gives a monospace, line-breakable rendering (handles
+% underscores) without creating an inner link competing with \href.
 \newcommand{\pyscript}[3]{%
   \href{\ghrepo{#1}/blob/main/#2}{\nolinkurl{#3}}}
 \newcommand{\repoOwn}{emergent-gr-h3c-witnesses-repro}
@@ -309,7 +309,7 @@ each $N$ (see Tab.~\ref{tab:alpha_model_comparison_p5}).
 \end{itemize}
 Bundle:
 \pyown{src/verify_chirality_sup_DOmega.py}{verify_chirality_sup_DOmega}, output
-\path|outputs/verify_chirality_sup_DOmega.json|.
+\pyown{outputs/verify_chirality_sup_DOmega.json}{verify_chirality_sup_DOmega.json}.
 
 \paragraph{Structural-rational hypothesis:
 $\alpha=\alpha_{\xi}^{2}$.}
@@ -499,7 +499,7 @@ confirming that the continuous chirality observable saturates
 the integer-valued $Q_{\rm top}\!=\!0$ identity at machine
 precision in the continuum limit. Reproducer
 \pyown{src/verify_chirality_to_integer_lift.py}{verify_chirality_to_integer_lift}, output
-\path|outputs/verify_chirality_to_integer_lift.json|.
+\pyown{outputs/verify_chirality_to_integer_lift.json}{verify_chirality_to_integer_lift.json}.
 
 \paragraph{Closure status: empirical correlation here,
 closed-theorem identification in the companion atiyah-singer
@@ -982,8 +982,8 @@ input data files (under \path|data/|), reproducer scripts
 unit tests (\path|tests/|). Cryptographic provenance is provided by
 \path|data/SHA256SUMS| (GNU \texttt{sha256sum -c} compatible),
 and the publication-prep frozen state is documented in
-\path|RELEASE_v1_0_0.md| with full release notes in
-\path|CHANGELOG.md|. Software metadata is in \path|pyproject.toml|
+\pyscript{causal-wave-landings-repro}{RELEASE_v1_0_0.md}{RELEASE_v1_0_0.md} with full release notes in
+\pyscript{causal-wave-landings-repro}{CHANGELOG.md}{CHANGELOG.md}. Software metadata is in \path|pyproject.toml|
 and \path|CITATION.cff| (Citation File Format 1.2). The package is
 licensed under MIT; the manuscript text is licensed under
 CC-BY-4.0.
